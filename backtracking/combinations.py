@@ -47,7 +47,7 @@ curr -> 1
 i-> 1
 pairs [1]
 
-curr -> 2
+curr -> 1
 i-> 2
 [1,2]
 
@@ -56,7 +56,7 @@ pairs==k
 return None 
 
 pairs.pop()-> [1]
-curr-> 2
+curr-> 1
 i->3
 [1,3]
 
