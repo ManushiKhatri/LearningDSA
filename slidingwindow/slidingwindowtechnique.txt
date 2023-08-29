@@ -1,0 +1,44 @@
+
+The Sliding Window boils down to 3 key steps.
+
+Expand our window
+Meet the condition and process the window
+Contract our window
+In code, these 3 key points will create a structure that looks like this.
+
+SLIDING WINDOW PSEUDOCODE
+def sliding_window(nums):
+    # Iterate over elements in our input
+        # Expand the window
+        # Meet the condition to stop expansion
+            # Process the current window   
+            # Contract the window
+
+
+
+Suitable for iterable sequentially
+
+Related to contiguous sequence of elements
+Good with
+string
+array
+linked list
+Related to
+minimum of something
+maximum of something
+longest
+shortest
+contains
+calculate something for example sum, average etc
+
+
+Note : 
+
+Sliding window vs two pointer, in sliding window we keep expanding and shrinking the window dynamically, by moving left and right pointers (sliding left side in this case to reduce the window size) until we don’t have duplicates in our window. Then we can increase window by moving right pointer.
+
+Algorithm:
+Expand window until you encounter a duplicate, then keep shrinking the window until the duplicate is not in the window anymore. Keep track of longest substring.
+
+Pitfall:
+- when shrinking the window, you have to remove the character from your Set data structure as well
+- when you encounter a duplicate when expanding the window, the duplicate that needs to be removed won’t necessarily be the one on the left end, it can be inside the window so you have to keep popping till you reach it
