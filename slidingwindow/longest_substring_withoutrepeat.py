@@ -15,13 +15,13 @@ shrink the window until no repeating character exist
 '''
 from collections import defaultdict
 def longest_substring_non_repeating(s):
-    
     # variables 
     start,max_length=0,0
     freq=defaultdict(int)
     for end in range(len(s)):
         right_char=s[end]
         freq[right_char]+=1
+        #shrink the window 
         while freq[right_char] > 1:
             left_char=s[start]
             freq[left_char]-=1
@@ -33,3 +33,6 @@ def longest_substring_non_repeating(s):
 print(longest_substring_non_repeating("abcabcbb"))  #3 
 print(longest_substring_non_repeating("pwwkew")) # 3
 print(longest_substring_non_repeating("aaaaaaa"))#1
+
+#time complexity -O(n)
+#space complexity -> O(len(dict))
