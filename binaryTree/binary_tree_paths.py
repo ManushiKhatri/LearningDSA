@@ -27,7 +27,7 @@ def binary_tree_paths(root):
             final_output.append('->'.join(level[:]))
         dfs(node.left,level)
         dfs(node.right,level)
-        level.pop()
+        level.pop()        
     dfs(root,[])
     return final_output
 root = root_from_list([1,2,3,None,5])
