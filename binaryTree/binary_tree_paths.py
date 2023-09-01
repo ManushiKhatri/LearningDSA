@@ -20,16 +20,14 @@ def binary_tree_paths(root):
     def dfs(node,level):
         if not node:
             return 
-        print('level is',level)
+        # print('level is',level)
         level.append(str(node.val))
         if not node.left and not node.right:
             # leaf node
             final_output.append('->'.join(level[:]))
         dfs(node.left,level)
-        
         dfs(node.right,level)
         level.pop()
-        
     dfs(root,[])
     return final_output
 root = root_from_list([1,2,3,None,5])
@@ -38,3 +36,6 @@ print(binary_tree_paths(root))
 root = root_from_list([3, 9, 20, None, None, 15, 7])
 pretty_print(root)
 print(binary_tree_paths(root))
+
+#time complexity would be O(n)-> in the worst case we need to visit every nodes 
+# space complexity would be O(height of recursive call)
