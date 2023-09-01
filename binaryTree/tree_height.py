@@ -6,6 +6,9 @@ height Of binary tree at the start root is defined to be zero
 
 '''
 from tree_node import *
+from visualiser.visualiser import Visualiser as vs
+
+@vs(node_properties_kwargs={"shape":"record", "color":"#f57542", "style":"filled", "fillcolor":"grey"})
 def binary_tree_height(root):
     #base case 
     if not root:
@@ -18,5 +21,13 @@ root1 = root_from_list([3])
 print(binary_tree_height(root))#2
 print(binary_tree_height(root1))#0
 
-        
+def main():
+    # Call function
+    print(binary_tree_height(root))
+    # Save recursion tree to a file
+    vs.make_animation("visualize/binarytreeheight.gif", delay=2)
+
+
+if __name__ == "__main__":
+    main()     
     
