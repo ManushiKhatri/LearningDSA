@@ -12,9 +12,9 @@ def pretty_print(root, depth=0):
      rotation from the usual top-down view."""
   if not root:
     return
-  pretty_print(root.left, depth + 1)
-  print(depth * "   " + str(root.val))
   pretty_print(root.right, depth + 1)
+  print(depth * "   " + str(root.val))
+  pretty_print(root.left, depth + 1)
 
 
 def root_from_list(lst):
@@ -27,4 +27,4 @@ def root_from_list(lst):
   return helper(0)
 
 root = root_from_list([3, 9, 20, None, None, 15, 7])
-pretty_print(root)
+# pretty_print(root)
