@@ -1,4 +1,4 @@
-# Online Python compiler (interpreter) to run Python online.
+
 # Write Python 3 code in this online editor and run it.
 '''
 An analyst is analyzing a stock over a period of n days. The price of the stock on the th day is price[i], and the profit obtained is denoted by profit[i]. The analyst wants to pick a triplet of days (i, j, k) such that (i < j < k) and priceli] < price[il < price[k] in such a way that the total profit, i.e. profit[i] + profit[j] + profit[k] is maximized.
