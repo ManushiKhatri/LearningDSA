@@ -29,12 +29,14 @@ def largest_value(root):
     while q:
         node = q.popleft()
         if node:
+            #processed for that level 
             max_value = max(max_value,node.val)
             if node.left:
                 q.append(node.left)
             if node.right:
                 q.append(node.right)
         else:
+            #we reached the level 
             result.append(max_value)
             max_value=-math.inf
             if q:

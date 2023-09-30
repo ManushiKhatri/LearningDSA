@@ -85,7 +85,6 @@ def quick_sort1(nums: list[int]) -> list[int]:
 
 def partition1(nums: list[int], start: int, end: int, pivot: int) -> int:
   nums[pivot], nums[start] = nums[start], nums[pivot]
-
   left, right = start + 1, end
   while left < right:
     while left < len(nums) and nums[left] < nums[start]:
@@ -122,6 +121,8 @@ def quick_sort2(nums):
   quickSort(nums,0,len(nums)-1)
   return nums
 print(quick_sort2([0,1,1,0,2,2]))
+#best case nlogn 
+# worst case O(n2)-one half is null and naother half is calling recursiely
 
 
 

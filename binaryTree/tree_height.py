@@ -26,8 +26,6 @@ def main():
     print(binary_tree_height(root))
     # Save recursion tree to a file
     vs.make_animation("visualize/binarytreeheight.gif", delay=2)
-
-
 if __name__ == "__main__":
     main()     
     
