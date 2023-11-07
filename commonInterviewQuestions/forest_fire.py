@@ -149,4 +149,6 @@ forest2=[
  ['.', '.', '.', '.', '.', '.', '.', '.', '.', '.']
 ]
 print(total_time(forest2))
+# time complexity O(n*m)
+# space complexity O()
 

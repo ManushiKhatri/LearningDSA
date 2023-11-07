@@ -43,13 +43,13 @@ def solution(centers):
     return count 
 
 # Testing the solution
+
 centers = [
-    [1, 1],
-    [2, 2],
-    [0, 4],
-    [1, 1]
-    # [8,9]
+    [-100000, -100000],
+    [-100000, -100000],
+    [100000,-100000 ],
+    [100000,100000]
 ]
-print(solution(centers))  # Expected output: 4
+print(solution(centers))  # Expected output: 0 # got 1 
 
 
